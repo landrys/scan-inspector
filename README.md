@@ -19,20 +19,29 @@
 `change to what needed using pyenv or whatever you want`
 
 - create the virtual environment and activate it
-`python -m venv ./venv
-`source venv/bin/activate
-`npm install
-`.../scan-inspector/venv/bin/python -m pip install --upgrade pip
-`pip install mysql_connector
-`pip install matplotlib
-- to invoke locally
+
+`	python -m venv ./venv
+`	source venv/bin/activate
+- Run npm install
+
+`	npm install
+- upgrade pip to the latest
+
+`       ../scan-inspector/venv/bin/python -m pip install --upgrade pip
+- Add in requirements to local python so you can run the function locally
+
+`   pip install mysql_connector
+`   pip install matplotlib
+- To invoke locally
+
 `serverless invoke local --path ./data.json --function scan-inspector --verbose
 
 - To run the function on AMAZON
-` sls invoke -f scan-inspector --data '{"report": true}' --verbose
--  What next?  Run these commands in the project directory:
+
+`   sls invoke -f scan-inspector --data '{"report": true}' --verbose
 
 - What next?  Run these commands in the project directory:
+
 ` serverless deploy    Deploy changes
 ` serverless info      View deployed endpoints and resources
 ` serverless invoke    Invoke deployed functions
@@ -40,3 +49,6 @@
 ` serverless info      View deployed endpoints and resources
 ` serverless invoke    Invoke deployed functions
 ` serverless --help    Discover more commands
+
+- To manage on serverless go to 
+`https://app.serverless.com/landrys 
