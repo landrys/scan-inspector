@@ -1,4 +1,24 @@
-# scan-need-checker
+# scan-inspector
+
+- git clone https://github.com/landrys/scan-inspector.git
+- create the src/private file that contains the
+	{
+  "user": "fpiergen",
+  "password": "theleon dude",
+  "database": "eleven", 
+  "mailSender": "landryseleven@gmail.com",
+  "mailSenderPassword": "the leon dude" 
+  }
+- get the the version of python --> python --version change to what needed using pyenv or whatever you want
+- create the virtual environment and activate it
+	- 'python -m venv ./venv'
+	- 'source venv/bin/activate'
+- 'npm install'
+- '.../scan-inspector/venv/bin/python -m pip install --upgrade pip'
+- 'pip install mysql_connector'
+- 'pip install matplotlib'
+
+
 
 - serverless create --template aws-python3  --name scan-need-checker  --path scan-need-checker
 - virtualenv venv --python=python3
