@@ -27,19 +27,22 @@ It is set up on a CRON to run report=false every morning and report=true every M
        	
 - get the the version of python 
 
-`python --version 
-`change to what needed using pyenv or whatever you want`
+`python --version`
+>change to what needed using pyenv or whatever you want
 
 - create the virtual environment and activate it
 
-`	python -m venv ./venv
-`	source venv/bin/activate
+`python -m venv ./venv`
+`source venv/bin/activate`
+
 - Run npm install
 
-`	npm install
+`npm install`
+`
 - upgrade pip to the latest
 
-`       ../scan-inspector/venv/bin/python -m pip install --upgrade pip
+`../scan-inspector/venv/bin/python -m pip install --upgrade pip`
+
 - Add in requirements to local python so you can run the function locally
 
 ```
@@ -48,11 +51,11 @@ It is set up on a CRON to run report=false every morning and report=true every M
 ```
 - To invoke locally
 
-```serverless invoke local --path ./data.json --function scan-inspector --verbose
+`serverless invoke local --path ./data.json --function scan-inspector --verbose`
 
 - To run the function on AMAZON
 
-```sls invoke -f scan-inspector --data '{"report": true}' --verbose
+`sls invoke -f scan-inspector --data '{"report": true}' --verbose`
 
 - What next?  Run these commands in the project directory:
 
@@ -67,4 +70,4 @@ It is set up on a CRON to run report=false every morning and report=true every M
 ```
 
 - To manage on serverless go to 
-```https://app.serverless.com/landrys 
+`https://app.serverless.com/landrys` 
