@@ -48,11 +48,11 @@ It is set up on a CRON to run report=false every morning and report=true every M
 ```
 - To invoke locally
 
-` serverless invoke local --path ./data.json --function scan-inspector --verbose
+```serverless invoke local --path ./data.json --function scan-inspector --verbose
 
 - To run the function on AMAZON
 
-`   sls invoke -f scan-inspector --data '{"report": true}' --verbose
+```sls invoke -f scan-inspector --data '{"report": true}' --verbose
 
 - What next?  Run these commands in the project directory:
 
@@ -67,4 +67,4 @@ It is set up on a CRON to run report=false every morning and report=true every M
 ```
 
 - To manage on serverless go to 
-`https://app.serverless.com/landrys 
+```https://app.serverless.com/landrys 
