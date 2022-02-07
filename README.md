@@ -71,4 +71,4 @@ It is set up on a CRON to run report=false every morning and report=true every M
 ```
 
 - To manage on serverless go to 
-`https://app.serverless.com/landrys` 
+> [SLS](https://app.serverless.com/landrys) 
