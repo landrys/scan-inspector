@@ -10,6 +10,8 @@ If false it will mail to configurable set of recipients an alert if bikes in the
 
 It is set up on a CRON to run report=false every morning and report=true every Monday.
 
+## Development
+
 - git clone https://github.com/landrys/scan-inspector.git
 - create the src/private file that contains the
 
