@@ -1,4 +1,4 @@
-# scan-inspector
+# SCAN-INSPECTOR
 ## Summary
 Scan inspector is a python function that is deployed to amazon lambda using serverless platform. It takes a boolean for input in jason format
 
