@@ -2,13 +2,16 @@
 
 - git clone https://github.com/landrys/scan-inspector.git
 - create the src/private file that contains the
-	{
-  "user": "fpiergen",
-  "password": "theleon dude",
-  "database": "eleven", 
-  "mailSender": "landryseleven@gmail.com",
-  "mailSenderPassword": "the leon dude" 
-  }
+       `	
+       {
+  	"user": "fpiergen",
+  	"password": "theleon dude",
+  	"database": "eleven", 
+  	"mailSender": "landryseleven@gmail.com",
+  	"mailSenderPassword": "the leon dude" 
+       }
+       `
+       	
 - get the the version of python --> python --version change to what needed using pyenv or whatever you want
 - create the virtual environment and activate it
 	- 'python -m venv ./venv'
