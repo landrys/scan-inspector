@@ -1,4 +1,4 @@
-# Distribution / packaging
+
 __pycache__
 private
 private.1
@@ -20,6 +20,7 @@ var/
 *.egg
 node_modules
 venv
+*.swp
 
 # Serverless directories
 .serverless

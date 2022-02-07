@@ -13,25 +13,30 @@
 }
 ```
        	
-- get the the version of python --> python --version change to what needed using pyenv or whatever you want
+- get the the version of python 
+
+`python --version 
+`change to what needed using pyenv or whatever you want`
+
 - create the virtual environment and activate it
-	- 'python -m venv ./venv'
-	- 'source venv/bin/activate'
-- 'npm install'
-- '.../scan-inspector/venv/bin/python -m pip install --upgrade pip'
-- 'pip install mysql_connector'
-- 'pip install matplotlib'
+`python -m venv ./venv
+`source venv/bin/activate
+`npm install
+`.../scan-inspector/venv/bin/python -m pip install --upgrade pip
+`pip install mysql_connector
+`pip install matplotlib
+- to invoke locally
+`serverless invoke local --path ./data.json --function scan-inspector --verbose
 
+- To run the function on AMAZON
+` sls invoke -f scan-inspector --data '{"report": true}' --verbose
+-  What next?  Run these commands in the project directory:
 
-
-- serverless create --template aws-python3  --name scan-need-checker  --path scan-need-checker
-- virtualenv venv --python=python3
-- source venv/bin/activate
-- Add dep in requirements.txt file and have Docker running.
-
-- to deploy
-  - serverless deploy
-  - serverless invoke -f scan-checker --log
-- to remove
-  - serverless remove
-- to run locally look at data.json and .ch for serverless command
+- What next?  Run these commands in the project directory:
+` serverless deploy    Deploy changes
+` serverless info      View deployed endpoints and resources
+` serverless invoke    Invoke deployed functions
+` serverless --help    Discover more commands            serverless deploy    Deploy changes
+` serverless info      View deployed endpoints and resources
+` serverless invoke    Invoke deployed functions
+` serverless --help    Discover more commands
