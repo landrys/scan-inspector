@@ -2,7 +2,7 @@
 
 - git clone https://github.com/landrys/scan-inspector.git
 - create the src/private file that contains the
-       ```	
+-       ```	
        {
   	"user": "fpiergen",
   	"password": "theleon dude",
