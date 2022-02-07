@@ -30,11 +30,13 @@
 `       ../scan-inspector/venv/bin/python -m pip install --upgrade pip
 - Add in requirements to local python so you can run the function locally
 
-`   pip install mysql_connector
-`   pip install matplotlib
+```
+  pip install mysql_connector
+  pip install matplotlib
+```
 - To invoke locally
 
-`serverless invoke local --path ./data.json --function scan-inspector --verbose
+` serverless invoke local --path ./data.json --function scan-inspector --verbose
 
 - To run the function on AMAZON
 
@@ -42,13 +44,15 @@
 
 - What next?  Run these commands in the project directory:
 
-` serverless deploy    Deploy changes
-` serverless info      View deployed endpoints and resources
-` serverless invoke    Invoke deployed functions
-` serverless --help    Discover more commands            serverless deploy    Deploy changes
-` serverless info      View deployed endpoints and resources
-` serverless invoke    Invoke deployed functions
-` serverless --help    Discover more commands
+```
+ serverless deploy    Deploy changes
+ serverless info      View deployed endpoints and resources
+ serverless invoke    Invoke deployed functions
+ serverless --help    Discover more commands            serverless deploy    Deploy changes
+ serverless info      View deployed endpoints and resources
+ serverless invoke    Invoke deployed functions
+ serverless --help    Discover more commands
+```
 
 - To manage on serverless go to 
 `https://app.serverless.com/landrys 
