@@ -1,4 +1,14 @@
 # scan-inspector
+## Summary
+Scan inspector is a python function that is deployed to amazon lambda using serverless platform. It takes a boolean for input in jason format
+
+` {report: true/false}
+
+If true it will generate a bike scan report of each stores for 3, 11, 13, 14 days back. It will mail it to a configurable set of recipients.
+
+If false it will mail to configurable set of recipients an alert if bikes in there store is not up to snuff(a certain percentage not scanned).
+
+It is set up on a CRON to run report=false every morning and report=true every Monday.
 
 - git clone https://github.com/landrys/scan-inspector.git
 - create the src/private file that contains the
